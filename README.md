@@ -59,14 +59,3 @@ python train_em.py --experiment=sudoku --num_digits=2 --inference=bplay --batch_
 python train_warcraft.py --dim=12 --batch_size=50 --num_samples=50 --num_epochs=5 --alpha=3 --beta=2 --path_value=3 --reg=0.03 --learnable_class_centers=1 --lr=0.0003 --min_lr=0.0003 --seed=0
 python train_warcraft.py --dim=30 --batch_size=50 --num_samples=20 --num_epochs=10 --alpha=3 --beta=2 --path_value=1 --reg=0 --learnable_class_centers=1 --lr=0.0001 --min_lr=0.0001 --seed=0
 ```
-
-## Structure
-
-| Path | Contents |
-|---|---|
-| `train_em.py`, `train_warcraft.py` | training scripts |
-| `inference/bplay/` | batched loopy belief propagation on `.uai` factor graphs |
-| `inference/MC_sampling/` | ABC sampling and relaxed-BP |
-| `inference/solvers/Dijkstra.py` | shortest path solver for Warcraft |
-| `problems/` | sampling problems and `.uai` factor graphs with their generators |
-| `neural_models/`, `data/` | networks and dataloaders |
