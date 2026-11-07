@@ -1,0 +1,15 @@
+__pycache__/
+smoke_test/
+
+# local link to the ViSudo-PC dataset (see README)
+data/visual_sudoku/visudo
+
+# training logs and checkpoints
+lightning_logs/
+final_logs/
+
+# local link to the Warcraft shortest path dataset (see README)
+data/warcraft/warcraft_shortest_path_oneskin
+
+# MNIST, downloaded by torchvision on first use
+data/MNIST_add/MNIST/

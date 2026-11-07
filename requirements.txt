@@ -1,0 +1,9 @@
+# Tested with Python 3.9 and the versions below. Install from the repository root:
+#   pip install -r requirements.txt
+torch==2.5.1
+torchvision==0.20.1
+pytorch-lightning==2.5.5
+tensorboard==2.20.0
+numpy==2.0.1
+einops==0.8.1
+ray==2.51.2          # train_warcraft.py: parallel Dijkstra
